@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans Malayalam", Arial, sans-serif;
+    background: #fff8e7;
+    color: #3d2600;
+}
+
+/* Navigation */
+
+header {
+    background: #6b3200;
+    padding: 18px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #ffd166;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffd166;
+}
+
+/* Home Hero */
+
+.hero {
+    height: 75vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("temple.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    background: #d88900;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #a96300;
+}
+
+/* Welcome */
+
+.welcome {
+    text-align: center;
+    padding: 60px 15%;
+}
+
+.welcome h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #7b3f00;
+}
+
+.welcome p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* About */
+
+.about {
+    min-height: 80vh;
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.about h1 {
+    font-size: 40px;
+    color: #7b3f00;
+    margin-bottom: 35px;
+}
+
+.card {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+    color: #9b5300;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.8;
+}
+
+/* Footer */
+
+footer {
+    background: #3d1f00;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        margin: 0 8px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    .welcome {
+        padding: 40px 8%;
+    }
+
+    .about {
+        padding: 40px 8%;
+    }
+}
